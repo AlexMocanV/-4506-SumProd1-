@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    long long a,b,c,s,maxi;
+    cin>>a>>b>>c;
+    s=a*b*c;
+    maxi=max(max(s/a+a,s/b+b),max(s/a+a,s/c+c));
+    cout<<maxi;
+    
+    return 0;
+}
